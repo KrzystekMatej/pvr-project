@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/engine",
+    "crates/scene_viewer",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MIT OR Apache-2.0"
