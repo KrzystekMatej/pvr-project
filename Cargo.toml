@@ -1,7 +1,7 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/core",
+    "crates/engine",
     "crates/app",
 ]
 
@@ -10,7 +10,7 @@ edition = "2024"
 license = "MIT OR Apache-2.0"
 
 [workspace.dependencies]
-bevy = "0.19.1"
+bevy_ecs = "0.19.1"
 
 [profile.dev]
 opt-level = 0
