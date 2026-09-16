@@ -1,10 +1,19 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/engine",
-    "crates/scene_viewer",
+    "crates/core",
+    "crates/app",
 ]
 
 [workspace.package]
 edition = "2024"
 license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+bevy = "0.19.1"
+
+[profile.dev]
+opt-level = 0
+
+[profile.dev.package."*"]
+opt-level = 3
