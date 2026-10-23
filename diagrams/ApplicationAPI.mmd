@@ -1,0 +1,18 @@
+classDiagram
+    class Application {
+        -List~Plugin~ app_plugins
+        -WindowAttributes window_attributes
+        +new() Self$
+        +with_attributes(attributes: WindowAttributes) Self$
+        +register_plugin(&mut self, plugin: Plugin)
+        +run(self) Result
+    }
+
+    class ApplicationLoopHandler {
+        -World world
+        +new(plugins: List~Plugin~, attributes: WindowAttributes) Self$
+        -resumed(&mut self, event_loop: &ActiveEventLoop)
+        -window_event(&mut self, event_loop: &ActiveEventLoop, id: WindowId, event: WindowEvent)
+    }
+
+    Application ..> ApplicationLoopHandler : creates on run

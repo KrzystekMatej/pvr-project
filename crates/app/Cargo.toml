@@ -5,9 +5,16 @@ edition.workspace = true
 license.workspace = true
 
 [dependencies]
+engine = { path = "../engine" }
+
 env_logger.workspace = true
 log.workspace = true
 anyhow.workspace = true
 thiserror.workspace = true
 serde.workspace = true
-engine = { path = "../engine" }
+
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_time.workspace = true
+
+egui.workspace = true

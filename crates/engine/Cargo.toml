@@ -11,16 +11,18 @@ anyhow.workspace = true
 thiserror.workspace = true
 serde.workspace = true
 
-bevy_ecs = "0.20.0"
+bevy_ecs.workspace = true
+bevy_app.workspace = true
+bevy_time.workspace = true
 
 winit = "0.30.13"
 glutin = "0.32.3"
 glutin-winit = "0.5.0"
 glow = "0.17.0"
 
-egui = "0.36.2"
+egui.workspace = true
 egui-winit = "0.36.2"
-egui_glow = "0.36.2"
+egui_glow = { version = "0.36.2", features = ["winit"]}
 
 glam = { version = "0.34.1", features = ["serde"] }
 

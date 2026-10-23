@@ -16,6 +16,12 @@ anyhow = "1.0.104"
 thiserror = "2.0.21"
 serde = { version = "1.0.229", features = ["derive"] }
 
+bevy_ecs = "0.20.0"
+bevy_app = "0.20.0"
+bevy_time = "0.20.0"
+
+egui = "0.36.2"
+
 [profile.dev]
 opt-level = 0
 
